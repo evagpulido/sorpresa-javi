@@ -87,7 +87,7 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
   <h1 class="big-name">JAVI</h1>
   <p class="big-age">55 AÑOS</p>
   <p class="sub">Paloma y Eva tienen<br>un secreto para ti.<br>¿Estás listo?</p>
-  <button class="btn" onclick="go('s1')">Quiero saber →</button>
+  <button class="btn" onclick="go('s1')">¡Vamos allá! →</button>
 </div>
 
 <!-- PISTA 1 -->
@@ -99,7 +99,7 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
   <div class="card-wrap" onclick="flip(1)">
     <div class="card" id="c1">
       <div class="face front"><span class="front-q">?</span><span class="front-hint">toca para revelar</span></div>
-      <div class="face back"><span class="back-icon">🌙</span><p class="back-text">Esta noche, Javi, no te quedas en el sofá</p></div>
+      <div class="face back"><span class="back-icon">🌙</span><p class="back-text">Esta noche, Javi, el sofá se queda sin ti.</p></div>
     </div>
   </div>
   <button class="btn btn-next" id="n1" onclick="go('s2')">Siguiente pista →</button>
@@ -114,7 +114,7 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
   <div class="card-wrap" onclick="flip(2)">
     <div class="card" id="c2">
       <div class="face front"><span class="front-q">?</span><span class="front-hint">toca para revelar</span></div>
-      <div class="face back"><span class="back-icon">⏱️</span><p class="back-text">Lo que tienes por delante son exactamente 90 minutos... y mucho más</p></div>
+      <div class="face back"><span class="back-icon">🔥</span><p class="back-text">Va a haber gritos, sudor y mucha pasión. Pero tranquilo, tú solo tienes que disfrutar.</p></div>
     </div>
   </div>
   <button class="btn btn-next" id="n2" onclick="go('s3')">Siguiente pista →</button>
@@ -129,7 +129,7 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
   <div class="card-wrap" onclick="flip(3)">
     <div class="card" id="c3">
       <div class="face front"><span class="front-q">?</span><span class="front-hint">toca para revelar</span></div>
-      <div class="face back"><span class="back-icon">⚽</span><p class="back-text">Habrá 22 corriendo... y unos cuantos miles mirando</p></div>
+      <div class="face back"><span class="back-icon">🔴⚪</span><p class="back-text">No habrá canastas ni triples, pero sí los dos colores que llevas en la sangre.</p></div>
     </div>
   </div>
   <button class="btn btn-next" id="n3" onclick="go('s4')">Siguiente pista →</button>
@@ -144,7 +144,7 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
   <div class="card-wrap" onclick="flip(4)">
     <div class="card" id="c4">
       <div class="face front"><span class="front-q">?</span><span class="front-hint">toca para revelar</span></div>
-      <div class="face back"><span class="back-icon">🔴⚪</span><p class="back-text">Rojo y blanco. Aunque seas más de canasta, esta noche los llevas en la sangre</p></div>
+      <div class="face back"><span class="back-icon">💪</span><p class="back-text">Ha sido un año complicado. Pero los aficionados de verdad no fallan cuando más se les necesita.</p></div>
     </div>
   </div>
   <button class="btn btn-next" id="n4" onclick="go('s5')">Siguiente pista →</button>
@@ -159,7 +159,7 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
   <div class="card-wrap" onclick="flip(5)">
     <div class="card" id="c5">
       <div class="face front"><span class="front-q">?</span><span class="front-hint">toca para revelar</span></div>
-      <div class="face back"><span class="back-icon">🧣</span><p class="back-text">Ve a buscar la bufanda del Athletic que tienes en casa</p></div>
+      <div class="face back"><span class="back-icon">🧣</span><p class="back-text">Necesitarás bufanda. Sí, en abril. Confía en nosotras.</p></div>
     </div>
   </div>
   <button class="btn btn-next" id="n5" onclick="go('s-abuelo')">Un momento más →</button>
@@ -167,9 +167,8 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
 
 <!-- ABUELO -->
 <div class="screen" id="s-abuelo">
-  <p class="abuelo-label">Esta noche también va él</p>
   <div class="photo-ring">
-    <img id="abuelo-img" src="foto_abuelo.jpeg" alt="José Luis"
+    <img id="abuelo-img" src="foto_abuelo.jpeg" alt="El abuelo"
          onerror="this.style.display='none';document.getElementById('ph').style.display='flex'">
     <div id="ph" class="photo-fallback">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -178,11 +177,11 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
       </svg>
     </div>
   </div>
-  <p class="abuelo-name">JOSÉ LUIS</p>
   <p class="abuelo-msg">
     El equipo de su vida, su gran ilusión.<br>
-    Ahí donde esté, sigue animándoles sin parar.<br><br>
-    <strong>Esta noche nos toca disfrutar a nosotros<br>como él lo haría.</strong>
+    Seguro que desde donde esté, sigue animándoles sin parar.<br><br>
+    <strong>Esta noche nos toca disfrutar a nosotros<br>como él lo haría.</strong><br><br>
+    Ya sabes de qué se trata, ¿verdad?
   </p>
   <button class="btn btn-light" onclick="go('s-reveal');boom()">Ver la sorpresa →</button>
 </div>
@@ -190,7 +189,7 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
 <!-- REVEAL -->
 <div class="screen" id="s-reveal">
   <div class="stripes"></div>
-  <p class="r-tag">Esta noche · Estadio Metropolitano · 21:00h</p>
+  <p class="r-tag">Estadio Metropolitano · 21:00h</p>
   <p class="r-team">Atlético de Madrid</p>
   <p class="r-vs">VS</p>
   <p class="r-team">Athletic Club</p>
