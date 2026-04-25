@@ -55,9 +55,9 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
 @keyframes pulse{0%,100%{border-color:rgba(255,255,255,.07)}50%{border-color:rgba(208,0,27,.35)}}
 
 /* ── ABUELO ── */
-#s-abuelo{background:#F5F0E8;color:#1a1a1a;text-align:center}
+#s-abuelo{background:#F5F0E8;color:#1a1a1a;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .abuelo-label{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:#aaa;margin-bottom:1.2rem}
-.photo-ring{width:130px;height:130px;border-radius:50%;border:3px solid var(--red);overflow:hidden;margin:0 auto 1.2rem;background:#E0D8CE;display:flex;align-items:center;justify-content:center}
+.photo-ring{width:130px;height:130px;border-radius:50%;border:3px solid var(--red);overflow:hidden;margin:0 auto 1.2rem;background:#E0D8CE;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .photo-ring img{width:100%;height:100%;object-fit:cover;display:block}
 .photo-fallback{display:none;flex-direction:column;align-items:center;justify-content:center;width:100%;height:100%}
 .photo-fallback svg{width:52px;height:52px;opacity:.35}
@@ -180,9 +180,9 @@ html,body{height:100%;width:100%;overflow:hidden;font-family:'Lato',sans-serif;b
   </div>
   <p class="abuelo-name">JOSÉ LUIS</p>
   <p class="abuelo-msg">
-    El abuelo era del Athletic de toda la vida.<br>
-    Esta noche vais a verles jugar en Madrid.<br><br>
-    <strong>Él estaría muy orgulloso.</strong>
+    El equipo de su vida, su gran ilusión.<br>
+    Ahí donde esté, sigue animándoles sin parar.<br><br>
+    <strong>Esta noche nos toca disfrutar a nosotros<br>como él lo haría.</strong>
   </p>
   <button class="btn btn-light" onclick="go('s-reveal');boom()">Ver la sorpresa →</button>
 </div>
